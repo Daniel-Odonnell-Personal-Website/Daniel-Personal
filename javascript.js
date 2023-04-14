@@ -14,6 +14,7 @@ form.addEventListener('submit', e => {
     .then(response => {
        alert('Success!', response)
        submitButton.disabled = false
+       window.location.href = "./submission.html"
       })
     .catch(error => {
     alert('Error!', error.message)
